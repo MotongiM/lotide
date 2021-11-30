@@ -1,3 +1,7 @@
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+
+
 const without = function(array,itemToRemove) {
   let result = [];
   for (let i = 0; i < array.length; i++) {
@@ -10,7 +14,7 @@ const without = function(array,itemToRemove) {
         result.push(array[i]);
       }
     }
-  }console.log(result);
+  } return result;
 };
 
 module.exports = without;
